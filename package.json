@@ -1,0 +1,29 @@
+{
+  "name": "boiletplatejs",
+  "version": "1.0.0",
+  "description": "Boilerplate utilizado para meus projetos",
+  "main": "index.html",
+  "directories": {
+    "test": "test",
+    "compile": "./node_modules/.bin/babel-cli"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --colors --progress -p",
+    "watch": "npm run build -- --watch",
+    "server": "./node_modules/.bin/webpack-dev-server --inline --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "oliveirajunior90"
+  },
+  "author": "Almir Júnior",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "dependencies": {}
+}
